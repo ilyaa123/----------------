@@ -37,7 +37,7 @@ h1,h2,h3,p{
     margin: 0;
 }
 section{
-    height: 100vh;
+    min-height: 100vh;
     padding: 40px 0;
 }
 .header_title{
@@ -51,6 +51,7 @@ section{
 .container{
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 .container-flex{
     display: flex;

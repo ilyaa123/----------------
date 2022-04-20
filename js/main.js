@@ -27,7 +27,7 @@ anchors.addEventListener('click', function(e) {
 let options = {threshold: [0.2]};
 let observer = new IntersectionObserver(onEntry, options);
 let elements = document.querySelectorAll('.animate');
-console.log(elements)
+
 elements.forEach((i) => {
     observer.observe(i); 
 });

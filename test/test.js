@@ -198,7 +198,7 @@ const showResult = (result, quiz) => {
     `;
     const button = document.createElement('button');
     button.className = 'main__btn result__return';
-    button.textContent = 'К списку квизов';
+    button.textContent = 'Назад';
 
     block.append(button);
     main.append(block);

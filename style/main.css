@@ -1,0 +1,218 @@
+/*intro*/
+.intro{
+    background: url('../images/background.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.intro::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.75;
+    z-index: 0;
+}
+.intro > h1{
+    transform: translateX(-50px);
+    transition-duration: 3s;
+}
+.intro h1{
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-weight: 500;
+    font-size: 32px;
+    text-shadow: 1px 1px 10px #FFFFFF;
+}
+.intro__button{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+    z-index: 1;
+    color: #fff;
+    transition-duration: .3s;
+}
+@keyframes opacity {
+    0%{
+        opacity: 1;
+    }
+    10%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.svg-one{
+    animation: opacity 5s infinite ease-in-out;
+}
+.svg-two{
+    animation: opacity 5s infinite ease-in-out;
+    animation-delay: .1s;
+}
+.intro__button:hover{
+    opacity: .5;
+}
+/*opr*/
+.opr_p{
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.block-img{
+    background-color: #CCFFD1;
+    padding: 50px 0;
+}
+.header-img{
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+}
+.img-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.block-img > img{
+    width: 300px;
+}
+.block-symmetry{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 110px;
+}
+.block-symmetry > svg{
+    color: #02FF1B;
+    transition-duration: .3s;
+}
+.symmetry-p{
+    max-width: 540px;
+}
+.block-symmetry > svg:hover .red{
+    color: red;
+}
+/*example*/
+.example{
+    height: auto;
+    margin-bottom: 100px;
+}
+.example__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+.example__header{
+    max-width: 300px;
+    font-weight: 400;
+    font-size: 20px;
+}
+.example__item{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.example__img{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+/*theorem*/
+.theorem{
+    height: auto;
+}
+.theorem__header{
+    font-weight: 400;
+    font-size: 16px;
+    max-width: 950px;
+    padding: 37px 67px;
+    border: 2px solid #02FF1B;
+    position: relative;
+}
+.theorem__header::after{
+    content: 'Теорема';
+    position: absolute;
+    top: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 6px 15px;
+    background-color: #0066FF;
+    color: #fff;
+}
+.theorem__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.theorem__image{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+}
+.theorem__ph > h4{
+    font-weight: 400;
+    font-size: 20px;
+}
+.theorem__ph > p{
+    font-weight: 400;
+    font-size: 16px;
+}
+.theorem__text{
+    max-width: 900px;
+    font-weight: 400;
+    font-size: 14px;
+}
+/*test*/
+.test__container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.test__block{
+    width: 540px;
+    height: 580px;
+    border: 2px solid #02FF1B;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.test_header{
+    font-weight: 400;
+    font-size: 32px;
+    color: #000;
+}
+.test__button{
+    margin-top: 150px;
+    padding: 12px 60px;
+    background-color: #fff;
+    border: 2px solid #02FF1B;
+    font-weight: 400;
+    font-size: 24px;
+    transition-duration: .3s;
+}
+.test__button:hover{
+    background-color: #02FF1B;
+    color: #fff;
+}
